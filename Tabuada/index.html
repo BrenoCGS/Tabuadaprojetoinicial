@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+        function mostrarTabuada(){
+            let infoNumero = parseFloat(document.getElementsByTagName("input")[0].value);
+            let resultAdicao = document.getElementById("p0");
+            let resultSubtracao = document.getElementById("p1");
+            let resultMultiplicacao = document.getElementById("p2");
+            let resultDivisao = document.getElementById("p3");
+
+
+
+
+            
+            resultAdicao.innerHTML = `<p>${infoNumero} + 1 = <strong>${infoNumero + 1}</strong><br>
+                                ${infoNumero} + 2 = <strong>${infoNumero + 2}</strong><br>
+                                ${infoNumero} + 3 = <strong>${infoNumero + 3}</strong><br>
+                                ${infoNumero} + 4 = <strong>${infoNumero + 4}</strong><br>
+                                ${infoNumero} + 5 = <strong>${infoNumero + 5}</strong><br>
+                                ${infoNumero} + 6 = <strong>${infoNumero + 6}</strong><br>
+                                ${infoNumero} + 7 = <strong>${infoNumero + 7}</strong><br>
+                                ${infoNumero} + 8 = <strong>${infoNumero + 8}</strong><br>
+                                ${infoNumero} + 9 = <strong>${infoNumero + 9}</strong><br>
+                                ${infoNumero} + 10 = <strong>${infoNumero + 10}</strong><br><br>`
+                                
+            resultSubtracao.innerHTML = `<p>${infoNumero} - 1 = <strong>${infoNumero - 1}</strong><br>
+                                ${infoNumero} - 2 = <strong>${infoNumero - 2}</strong><br>
+                                ${infoNumero} - 3 = <strong>${infoNumero - 3}</strong><br>
+                                ${infoNumero} - 4 = <strong>${infoNumero - 4}</strong><br>
+                                ${infoNumero} - 5 = <strong>${infoNumero - 5}</strong><br>
+                                ${infoNumero} - 6 = <strong>${infoNumero - 6}</strong><br>
+                                ${infoNumero} - 7 = <strong>${infoNumero - 7}</strong><br>
+                                ${infoNumero} - 8 = <strong>${infoNumero - 8}</strong><br>
+                                ${infoNumero} - 9 = <strong>${infoNumero - 9}</strong><br>
+                                ${infoNumero} - 10 = <strong>${infoNumero - 10}</strong><br><br>`
+            
+            resultMultiplicacao.innerHTML = `<p>${infoNumero} X 1 = <strong>${infoNumero * 1}</strong><br>
+                                ${infoNumero} X 2 = <strong>${infoNumero * 2}</strong><br>
+                                ${infoNumero} X 3 = <strong>${infoNumero * 3}</strong><br>
+                                ${infoNumero} X 4 = <strong>${infoNumero * 4}</strong><br>
+                                ${infoNumero} X 5 = <strong>${infoNumero * 5}</strong><br>
+                                ${infoNumero} X 6 = <strong>${infoNumero * 6}</strong><br>
+                                ${infoNumero} X 7 = <strong>${infoNumero * 7}</strong><br>
+                                ${infoNumero} X 8 = <strong>${infoNumero * 8}</strong><br>
+                                ${infoNumero} X 9 = <strong>${infoNumero * 9}</strong><br>
+                                ${infoNumero} X 10 = <strong>${infoNumero * 10}</strong><br><br>`
+            
+            resultDivisao.innerHTML = `<p>${infoNumero} / 1 = <strong>${infoNumero / 1}</strong><br>
+                                ${infoNumero} / 2 = <strong>${infoNumero / 2}</strong><br>
+                                ${infoNumero} / 3 = <strong>${infoNumero / 3}</strong><br>
+                                ${infoNumero} / 4 = <strong>${infoNumero / 4}</strong><br>
+                                ${infoNumero} / 5 = <strong>${infoNumero / 5}</strong><br>
+                                ${infoNumero} / 6 = <strong>${infoNumero / 6}</strong><br>
+                                ${infoNumero} / 7 = <strong>${infoNumero / 7}</strong><br>
+                                ${infoNumero} / 8 = <strong>${infoNumero / 8}</strong><br>
+                                ${infoNumero} / 9 = <strong>${infoNumero / 9}</strong><br>
+                                ${infoNumero} / 10 = <strong>${infoNumero / 10}</strong><br><br>`
+
+
+        }
+       
+       
+
+    </script>
+    <style>
+        button{
+            width: 10%;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    
+<h1>Tabuada</h1>
+<input type="number" placeholder="Digite um Número">
+<button  onclick="mostrarTabuada()">Clique aqui</button>
+
+<p id="p0"><mark>Aqui aparecerá a tabuada</mark></p>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+    
+</body>
+</html>
